@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INVISTA+ - Editar Perfil</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Menu Lateral (mesmo código do index.html) -->
+    <!-- Barra de Pesquisa (mesmo código do index.html) -->
+
+    <div class="container">
+      <header class="main-header">
+        <button class="menu-button" id="menuButton">
+          <img src="assets/menu-icon.png" alt="Menu" />
+        </button>
+        <a href="index.html" class="logo-link">
+          <img src="assets/logo.png" alt="INVISTA+" class="logo" />
+        </a>
+        <button class="search-button" id="searchButton">
+          <img src="assets/search-icon.png" alt="Pesquisar" />
+        </button>
+      </header>
+
+      <nav class="top-nav">
+        <a href="editar-perfil.html" class="nav-button active">EDITAR PERFIL</a>
+        <a href="configuracoes.html" class="nav-button">CONFIGURAÇÕES</a>
+        <a href="ajuda.html" class="nav-button">AJUDA / FAQ</a>
+      </nav>
+
+      <main>
+        <section class="edit-profile-section">
+          <h1>EDITAR PERFIL</h1>
+          <form class="edit-form">
+            <div class="form-group">
+              <div class="form-item">
+                <label>NOME COMPLETO</label>
+                <input
+                  type="text"
+                  placeholder="Seu nome completo"
+                  value="João da Silva"
+                />
+              </div>
+              <div class="form-item">
+                <label>E-MAIL</label>
+                <input
+                  type="email"
+                  placeholder="Seu e-mail"
+                  value="joao@email.com"
+                />
+              </div>
+              <div class="form-item">
+                <label>FOTO DE PERFIL</label>
+                <input type="file" accept="image/*" />
+              </div>
+              <div class="form-item">
+                <label>PERFIL DE INVESTIMENTO</label>
+                <select>
+                  <option>CUIDADOSO</option>
+                  <option>MODERADO</option>
+                  <option>ARROJADO</option>
+                </select>
+              </div>
+              <div class="form-item">
+                <label>CORRETORA</label>
+                <select>
+                  <option>XP Investimentos</option>
+                  <option>BTG Pactual</option>
+                  <option>Rico</option>
+                  <option>Clear</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn-primary">
+                SALVAR ALTERAÇÕES
+              </button>
+              <a href="perfil.html" class="btn-secondary">CANCELAR</a>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

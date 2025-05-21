@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INVISTA+ - CDBs</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Menu Lateral (mesmo código do index.html) -->
+    <!-- Barra de Pesquisa (mesmo código do index.html) -->
+
+    <div class="container">
+      <header class="main-header">
+        <button class="menu-button" id="menuButton">
+          <img src="assets/menu-icon.png" alt="Menu" />
+        </button>
+        <a href="index.html" class="logo-link">
+          <img src="assets/logo.png" alt="INVISTA+" class="logo" />
+        </a>
+        <button class="search-button" id="searchButton">
+          <img src="assets/search-icon.png" alt="Pesquisar" />
+        </button>
+      </header>
+
+      <nav class="top-nav">
+        <a href="editar-perfil.html" class="nav-button">EDITAR PERFIL</a>
+        <a href="configuracoes.html" class="nav-button">CONFIGURAÇÕES</a>
+        <a href="ajuda.html" class="nav-button">AJUDA / FAQ</a>
+      </nav>
+
+      <main>
+        <div class="search-filter">
+          <input type="text" placeholder="Buscar CDB..." />
+          <select>
+            <option>Ordenar por</option>
+            <option>Maior rentabilidade</option>
+            <option>Menor rentabilidade</option>
+            <option>Menor valor mínimo</option>
+          </select>
+        </div>
+
+        <div class="investments-grid">
+          <div class="investment-card cdb">
+            <div class="card-header">
+              <h2>Banco XP</h2>
+              <span class="cdi-badge">180% CDI</span>
+            </div>
+            <div class="card-body">
+              <p class="value">Valor mínimo: <strong>R$ 1.000,00</strong></p>
+              <p class="segment">Vencimento: 2 anos</p>
+              <p class="last-income">Liquidez: Diária</p>
+            </div>
+            <button class="details-button">Detalhes</button>
+          </div>
+
+          <div class="investment-card cdb">
+            <div class="card-header">
+              <h2>Nºen</h2>
+              <span class="cdi-badge">183% CDI</span>
+            </div>
+            <div class="card-body">
+              <p class="value">Valor mínimo: <strong>R$ 1.000,00</strong></p>
+              <p class="segment">Vencimento: 3 anos</p>
+              <p class="last-income">Liquidez: No vencimento</p>
+            </div>
+            <button class="details-button">Detalhes</button>
+          </div>
+
+          <div class="investment-card cdb">
+            <div class="card-header">
+              <h2>Sofisa Direto</h2>
+              <span class="cdi-badge">100% CDI</span>
+            </div>
+            <div class="card-body">
+              <p class="value">Valor mínimo: <strong>R$ 1.000,00</strong></p>
+              <p class="segment">Vencimento: 1 ano</p>
+              <p class="last-income">Liquidez: Diária</p>
+            </div>
+            <button class="details-button">Detalhes</button>
+          </div>
+
+          <div class="investment-card cdb">
+            <div class="card-header">
+              <h2>BTG Pactual</h2>
+              <span class="cdi-badge">103% CDI</span>
+            </div>
+            <div class="card-body">
+              <p class="value">Valor mínimo: <strong>R$ 1.000,00</strong></p>
+              <p class="segment">Vencimento: 6 meses</p>
+              <p class="last-income">Liquidez: No vencimento</p>
+            </div>
+            <button class="details-button">Detalhes</button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INVISTA+ - Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Menu Lateral -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+    <aside class="side-menu" id="sideMenu">
+      <div class="menu-header">
+        <img src="assets/logo.png" alt="Logo" class="menu-logo" />
+        <h3>INVISTA+</h3>
+      </div>
+      <nav class="menu-nav">
+        <a href="index.html" class="menu-item"><span>🏠</span> Home</a>
+        <a href="perfil.html" class="menu-item"><span>👤</span> Perfil</a>
+        <a href="fiis.html" class="menu-item"><span>📊</span> FIIs</a>
+        <a href="cdbs.html" class="menu-item"><span>💰</span> CDBs</a>
+        <a href="configuracoes.html" class="menu-item"
+          ><span>⚙️</span> Configurações</a
+        >
+        <a href="ajuda.html" class="menu-item"><span>❓</span> Ajuda/FAQ</a>
+      </nav>
+      <div class="menu-footer">
+        <button id="closeMenu">✕ Fechar</button>
+      </div>
+    </aside>
+
+    <!-- Barra de Pesquisa -->
+    <div class="search-overlay" id="searchOverlay"></div>
+    <div class="search-container" id="searchContainer">
+      <div class="search-box">
+        <input type="text" placeholder="Pesquisar..." id="searchInput" />
+        <button id="closeSearch">✕</button>
+      </div>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+
+    <div class="container">
+      <header class="main-header">
+        <button class="menu-button" id="menuButton">
+          <img src="assets/menu-icon.png" alt="Menu" />
+        </button>
+        <a href="index.html" class="logo-link">
+          <img src="assets/logo.png" alt="INVISTA+" class="logo" />
+        </a>
+        <button class="search-button" id="searchButton">
+          <img src="assets/search-icon.png" alt="Pesquisar" />
+        </button>
+      </header>
+
+      <nav class="top-nav">
+        <a href="editar-perfil.html" class="nav-button">EDITAR PERFIL</a>
+        <a href="configuracoes.html" class="nav-button">CONFIGURAÇÕES</a>
+        <a href="ajuda.html" class="nav-button">AJUDA / FAQ</a>
+      </nav>
+
+      <main>
+        <section class="saldo-section">
+          <h1>INVISTA+</h1>
+          <h2>SALDO DISPONÍVEL</h2>
+          <p class="saldo-valor">R$ 10.000,00</p>
+        </section>
+
+        <section class="desempenho-section">
+          <h3>DESEMPENHO:</h3>
+          <ul class="valores-list">
+            <li>Rentabilidade: 12,5%</li>
+            <li>Dividendos: R$ 350,00</li>
+            <li>Patrimônio: R$ 15.750,00</li>
+            <li>FIIs: R$ 8.200,00</li>
+            <li>CDBs: R$ 7.550,00</li>
+          </ul>
+        </section>
+
+        <section class="quick-actions">
+          <a href="fiis.html" class="action-card">
+            <span>📊</span>
+            <h4>MEUS FIIs</h4>
+          </a>
+          <a href="cdbs.html" class="action-card">
+            <span>💰</span>
+            <h4>MEUS CDBs</h4>
+          </a>
+          <a href="perfil.html" class="action-card">
+            <span>👤</span>
+            <h4>MEU PERFIL</h4>
+          </a>
+        </section>
+      </main>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

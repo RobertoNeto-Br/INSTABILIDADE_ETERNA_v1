@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INVISTA+ - Fundos Imobiliários</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Menu Lateral (mesmo código do index.html) -->
+    <!-- Barra de Pesquisa (mesmo código do index.html) -->
+
+    <div class="container">
+      <header class="main-header">
+        <button class="menu-button" id="menuButton">
+          <img src="assets/menu-icon.png" alt="Menu" />
+        </button>
+        <a href="index.html" class="logo-link">
+          <img src="assets/logo.png" alt="INVISTA+" class="logo" />
+        </a>
+        <button class="search-button" id="searchButton">
+          <img src="assets/search-icon.png" alt="Pesquisar" />
+        </button>
+      </header>
+
+      <nav class="top-nav">
+        <a href="editar-perfil.html" class="nav-button">EDITAR PERFIL</a>
+        <a href="configuracoes.html" class="nav-button">CONFIGURAÇÕES</a>
+        <a href="ajuda.html" class="nav-button">AJUDA / FAQ</a>
+      </nav>
+
+      <main>
+        <div class="search-filter">
+          <input type="text" placeholder="Buscar FII..." />
+          <select>
+            <option>Ordenar por</option>
+            <option>Maior DY</option>
+            <option>Menor DY</option>
+            <option>Maior valor</option>
+            <option>Menor valor</option>
+          </select>
+        </div>
+
+        <div class="investments-grid">
+          <div class="investment-card fii">
+            <div class="card-header">
+              <h2>MXRF11</h2>
+              <span class="dy-badge">DY 0.07%</span>
+            </div>
+            <div class="card-body">
+              <p class="value">Valor/cota: <strong>R$ 9,32</strong></p>
+              <p class="segment">Tipo: Tijolo</p>
+              <p class="last-income">Últ. rendimento: R$ 0,07</p>
+            </div>
+            <button class="details-button">Detalhes</button>
+          </div>
+
+          <div class="investment-card fii">
+            <div class="card-header">
+              <h2>GARE11</h2>
+              <span class="dy-badge">DY 0.94%</span>
+            </div>
+            <div class="card-body">
+              <p class="value">Valor/cota: <strong>R$ 8,82</strong></p>
+              <p class="segment">Tipo: Tijolo</p>
+              <p class="last-income">Últ. rendimento: R$ 0,83</p>
+            </div>
+            <button class="details-button">Detalhes</button>
+          </div>
+
+          <div class="investment-card fii">
+            <div class="card-header">
+              <h2>VGHF11</h2>
+              <span class="dy-badge">DY 1.17%</span>
+            </div>
+            <div class="card-body">
+              <p class="value">Valor/cota: <strong>R$ 1,67</strong></p>
+              <p class="segment">Tipo: Papel</p>
+              <p class="last-income">Últ. rendimento: R$ 0,02</p>
+            </div>
+            <button class="details-button">Detalhes</button>
+          </div>
+
+          <div class="investment-card fii">
+            <div class="card-header">
+              <h2>VCRI11</h2>
+              <span class="dy-badge">DY 1.38%</span>
+            </div>
+            <div class="card-body">
+              <p class="value">Valor/cota: <strong>R$ 1,32</strong></p>
+              <p class="segment">Tipo: Papel</p>
+              <p class="last-income">Últ. rendimento: R$ 0,02</p>
+            </div>
+            <button class="details-button">Detalhes</button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
